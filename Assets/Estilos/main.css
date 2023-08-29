@@ -51,6 +51,9 @@ justify-content: space-between;
 align-items: center;
 height: 12vh;
 }
+.top{
+    padding: 20px;
+}
 
 img.logo{
 width: 130px;

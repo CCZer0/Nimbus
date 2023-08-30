@@ -49,7 +49,7 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
-height: 12vh;
+height: 8vh;
 }
 .top{
     padding: 20px;
@@ -216,8 +216,13 @@ top: -25px;
 left: 20px;
 background-color: var(--wt);
 border-radius: 50%;
+display: flex;
 }
 
+#mascaraCard h2{
+    padding-left: 20px;
+
+}
 .contato{
 border: 2px dashed var(--wt);
 background-color: var(--bk);

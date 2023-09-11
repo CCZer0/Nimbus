@@ -20,7 +20,7 @@
 }
 
 ::-webkit-scrollbar{
-    width: 15px;
+width: 15px;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -30,6 +30,7 @@
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 90px;
+
 }
 
 body {
@@ -128,15 +129,14 @@ a.buttonP{
     align-items: center;
     gap: 15px;
     margin: 4rem 0rem;
-
-span{
+}
+a span{
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     color: var(--wt);
     margin-left: 10px;
     margin-right: 10px;
-    }
 }
 
 .buttonP {
@@ -168,44 +168,43 @@ span{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.card{
-    p{
+.card p{
     width: 290px;
     height: 60px;
     color: var(--wt);
     text-align: left;
     padding-left: 20px;
     padding-top: 30px;
-    }
-    .controle{
-        width: 40px;
-        height: 40px;
-        position: relative;
-        top: 2px;
-        left: 5px;
-        }
-        
-    .doll{
-        width: 40px;
-        height: 40px;
-        position: relative;
-        top: 5px;
-        left: 5px;
-        }
-        
-    .book{
-        width: 40px;
-        height: 40px;
-        position: relative;
-        top: 2px;
-        left: 7px;
-        }
-        
-    .bgCard{
-        background-color: var(--rx);
-        width: 360px;
-        height: 150px;
-        }
+}
+
+.card .controle{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 2px;
+    left: 5px;
+}
+
+.card .doll{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.card .book{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 2px;
+    left: 7px;
+}
+
+.card .bgCard{
+    background-color: var(--rx);
+    width: 360px;
+    height: 150px;
 }
 
 #mascaraCard{
@@ -217,13 +216,12 @@ span{
     background-color: var(--wt);
     border-radius: 50%;
     display: flex;
-    
-    h2{
-        padding-left: 20px;
-
-    }
 }
 
+#mascaraCard h2{
+    padding-left: 20px;
+
+}
 .contato{
     border: 2px dashed var(--wt);
     background-color: var(--bk);
@@ -284,189 +282,162 @@ span{
 footer {
     background-color: var(--bk);
     height: 350px;
-    bottom: 0;
-    flex-direction: column;
-    height: auto;
+}
+
+footer .Superior{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-around;
-    gap: 50px;
-    
-    .Superior{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-    }
+}
 
-    .inferior{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        color: var(--wt);
-        margin-top: 30px;
-        gap: 25px;
-    }
+footer .inferior{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--wt);
+    margin-top: 30px;
+    gap: 25px;
+}
 
-    .aviso{
-        font-size: 10px;
-        color: var(--wt);
-    }
+footer .aviso{
+    font-size: 10px;
+    color: var(--wt);
+}
 
-    .direitos{
-        font-size: 10px;
-        color: var(--wt);
-    }
+footer .direitos{
+    font-size: 10px;
+    color: var(--wt);
+}
 
-    .Institucional{
-        display: flex;
-        flex-direction: column;
-    }
+footer .Institucional{
+    display: flex;
+    flex-direction: column;
+}
 
-    .DadosdaEmpresa{
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        color: var(--wt);
-        font-size: 12px;
-        text-align: left;
-        border-bottom: 2px  solid var(--wt);
-    }
+footer .DadosdaEmpresa{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: var(--wt);
+    font-size: 12px;
+    text-align: left;
+    border-bottom: 2px  solid var(--wt);
+}
 
-    img{
-        width: 240px;
-        height: 160px;
-        margin-top: 20px;
-        margin-left: 20px;
-    }
+footer img{
+    width: 240px;
+    height: 160px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
 
-    .Dados {
-        display: flex;
-        flex-direction: column;
-        width: 190px;
-        margin-top: 20px;
-    }
+footer .Dados {
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    margin-top: 20px;
+}
 
-    .RedeSocial{
-        display: flex;
-        justify-content: center;
-        gap: 25px;
-        margin: 20px 0px 0px 0px;
-    }
+footer .RedeSocial{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0px 0px 0px;
+}
 
-    .RedeSocial a{
-        box-sizing: border-box;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        transition: 0.4s;
-    }
+footer .RedeSocial a{
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
 
-    .RedeSocial svg{
-        color: var(--rx);
-        margin-left: 5px;
-        margin-top: 5px;
-    }
+footer .RedeSocial svg{
+    color: var(--rx);
+    margin-left: 5px;
+    margin-top: 5px;
+}
 
-    .RedeSocial a:hover{
-        background-color: var(--wt);
-    }
+footer .RedeSocial a:hover{
+    background-color: var(--wt);
+}
 
-    nav{
-        height: 200px;
-        display: flex;
-        flex-direction: column;
+footer nav{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
 
-        div{
-            color: var(--wt);
-            font-size: 16px;  
-            font-weight: bold;
-            width: 171px;
-            margin-left: 10px;
-            letter-spacing: 2px;
-        }
-        
-        ul{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            justify-content: space-around;
-            margin: 15px 10px 10px 10px;
-            text-align: left;
+footer nav div{
+    color: var(--wt);
+    font-size: 16px;  
+    font-weight: bold;
+    width: 171px;
+    margin-left: 10px;
+    letter-spacing: 2px;
+}
 
-            a{
-                color: var(--wt);
-                font-size: 14px;
-                transition: .3s;
+footer nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+    margin: 15px 10px 10px 10px;
+    text-align: left;
+}
 
-                :hover{
-                    color: var(--rx);
-                    opacity: 0.7;
-                    }
-            }
-        }    
-    }
-    form{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            color: var(--wt);
-        }
-        
-        label{
-            margin-bottom: 10px;
-        }
-        
-        input{
-            max-width: 200px;
-            outline: none;
-            height: 30px;
-            border-radius: 30px;
-            border: 3px solid var(--bkrx);
-            padding: 10px 20px;
+footer nav ul a{
+    color: var(--wt);
+    font-size: 14px;
+    transition: .3s;
+}
 
-            [type=email]::placeholder{
-                color: var(--bkrx);
-            }
-                
-            [type=email] {
-                color: var(--bkrx);
-                font-weight: 600;
-                font-size: 16px;
-                caret-color: var(--bkrx);
-            }
-        }
-            
-        button{
-            background: linear-gradient(45deg, #9747FF 40% , #C73EF9 100%);
-            color: var(--wt);
-            border: 2px solid var(--wt);
-            height: 30px;
-            border-radius: 15px;
-            margin: 10px 0px;
-        }
+footer nav ul a:hover{
+    color: var(--rx);
+    opacity: 0.7;
+}
 
-        .Superior{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            gap: 50px;
-        }
-        
-        .DadosdaEmpresa{
-            display: flex;
-            flex-direction: column;
-        }
-        
-        
-        .Dados{
-            align-items: center;
-            width: 280px;
-            margin-bottom: 10px;
-        }
-        
-        p.Endereço{
-            margin-left: 53px;
-        }
+footer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--wt);
+}
+
+form label{
+    margin-bottom: 10px;
+}
+
+form input{
+    max-width: 200px;
+    outline: none;
+    height: 30px;
+    border-radius: 30px;
+    border: 3px solid var(--bkrx);
+    padding: 10px 20px;
+}
+
+input[type=email]::placeholder{
+    color: var(--bkrx);
+
+}
+
+input[type=email] {
+    color: var(--bkrx);
+    font-weight: 600;
+    font-size: 16px;
+    caret-color: var(--bkrx);
+}
+
+form button{
+    background: linear-gradient(45deg, #9747FF 40% , #C73EF9 100%);
+    color: var(--wt);
+    border: 2px solid var(--wt);
+    height: 30px;
+    border-radius: 15px;
+    margin: 10px 0px;
 }
 
 .Slogan{
@@ -502,15 +473,11 @@ header img{
     align-items: center;
     justify-content: space-around;
     transform: translateX(100%);
+}
 
-    li{
-        margin-left: 0px;
-        opacity: 1;
-    }
-
-    .active{
-        transform: translateX(0);
-    }
+.links li{
+    margin-left: 0px;
+    opacity: 1;
 }
 
 div.menu{
@@ -550,28 +517,62 @@ section.inicio{
     border-radius: 20px;
 }
 
+footer{
+    flex-direction: column;
+    height: auto;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+footer .Superior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+footer .DadosdaEmpresa{
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer .Dados{
+    align-items: center;
+    width: 280px;
+    margin-bottom: 10px;
+}
+
+footer p.Endereço{
+    margin-left: 53px;
+}
+}
+
+.links.active{
+    transform: translateX(0);
 }
 
 @media(max-width:1200px) {
 
 .produtos{
-height: auto;
-flex-direction: column;
+    height: auto;
+    flex-direction: column;
 }
 
 .card{
-width: 320px;
-height: 280px;
+    width: 320px;
+    height: 280px;
 }
 
 .card .bgCard{
-background-color: var(--bkrx);
-width: 320px;
-height: 120px;
+    background-color: var(--bkrx);
+    width: 320px;
+    height: 120px;
 }
 
 .contato{
-flex-direction: column;
+    flex-direction: column;
 }
 }
 main{

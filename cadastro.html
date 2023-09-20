@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="./Assets/Estilos/banner.css">
     <link rel="stylesheet" href="./Assets/Estilos/style.css">
     <link rel="shortcut icon" href="./Assets/Images/Livraria_Nimbus_atualizada-removebg-preview.png" type="image/x-icon">
-    <title>Tlea de login</title>
+    <title>Tlea de cadastro</title>
 </head>
 <body>
     <header>
@@ -36,13 +36,36 @@
             </ul>
         </nav>
     </header>
-    <div class="login">
-        <h1>Login</h1>
-        <input type="text" placeholder="Nome">
-        <br><br>
-        <input type="password" placeholder="Senha">
-        <br><br>
-        <button>Enviar</button>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Formulário de Clientes</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome">Nome Completo</label>
+                </div>
+                <div class="inputBox">
+                    <input type="email" name="email" id="email" class="inputUser" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone">Telefone</label>
+                </div>
+                <p>Sexo</p>
+                <input type="radio" name="Genero" id="masculino" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="Genero" id="feminino" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="Genero" id="outro" value="outro" required>
+                <label for="outro">Outro</label>
+                <div class="inputBox">
+                    <input type="date" name="data_nascimento" id="data_nascimento" class="inputUser" required>
+                    <label for="data_nascimento"><b>Data de Nascimento</b></label>
+                </div>
+            </fieldset>
+        </form>
     </div>
     
 </body>

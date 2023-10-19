@@ -22,6 +22,15 @@
         .box{
             margin-top: 300px;
         }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            letter-spacing: 2px;
+        }
     </style>
 </head>
 <body>
@@ -66,7 +75,7 @@
                     <label for="telefone"class="labelInput">Telefone</label>
                 </div>
                 <br><br>
-                <p>Sexo</p>
+                <p>Sexo:</p>
                 <input type="radio" name="Genero" id="masculino" value="masculino" required>
                 <label for="masculino">Masculino</label>
                 <input type="radio" name="Genero" id="feminino" value="feminino" required>
@@ -93,7 +102,8 @@
                     <input type="text" name="endereco" id="endereco" class="inputUser" required>
                     <label for="endereco"class="labelInput"><b>Endereço</b></label>
                 </div>
-
+                <br><br>
+                <input type="submit" name="submit" id="submit">
             </fieldset>
         </form>
     </div>

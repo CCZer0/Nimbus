@@ -1,133 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário | GN</title>
-    <style>
-        
-        .box{
-            color: white;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 15px;
-            border-radius: 15px;
-            width: 20%;
-@CCZer0	Reply…
-        }
-        fieldset{
-            border: 3px solid dodgerblue;
-        }
-        legend{
-            border: 1px solid dodgerblue;
-            padding: 10px;
-            text-align: center;
-            background-color: dodgerblue;
-            border-radius: 8px;
-        }
-        .inputBox{
-            position: relative;
-        }
-        .inputUser{
-            background: none;
-            border: none;
-            border-bottom: 1px solid white;
-            outline: none;
-            color: white;
-            font-size: 15px;
-            width: 100%;
-            letter-spacing: 2px;
-        }
-        .labelInput{
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            pointer-events: none;
-            transition: .5s;
-        }
-        .inputUser:focus ~ .labelInput,
-        .inputUser:valid ~ .labelInput{
-            top: -20px;
-            font-size: 12px;
-            color: dodgerblue;
-        }
-        #data_nascimento{
-            border: none;
-            padding: 8px;
-            border-radius: 10px;
-            outline: none;
-            font-size: 15px;
-        }
-        #submit{
-            background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
-            width: 100%;
-            border: none;
-            padding: 15px;
-            color: white;
-            font-size: 15px;
-            cursor: pointer;
-            border-radius: 10px;
-        }
-        #submit:hover{
-            background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
-        }
-    </style>
-</head>
-<body>
-    <div class="box">
-        <form action="">
-            <fieldset>
-                <legend><b>Fórmulário de Clientes</b></legend>
-                <br>
-                <div class="inputBox">
-                    <input type="text" name="nome" id="nome" class="inputUser" required>
-                    <label for="nome" class="labelInput">Nome completo</label>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Encontre os melhores livros em diversas categorias e autores renomados 
+        na nossa loja online de editora/livraria. Aproveite as promoções e frete grátis para todo o país.">
+        <meta name="keywords" content="Livros, Editora, Livraria Obras literárias Categorias de livros, 
+        Autores renomados, Promoções, Frete grátis, Loja online">
+        <link rel="canonical" href="login.html">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Du">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./Assets/Estilos/banner.css">
+        <link rel="stylesheet" href="./Assets/Estilos/style.css">
+        <link rel="stylesheet" type="text/css" href="Assets/Estilos/bootstrap.min.css">
+        <link rel="shortcut icon" href="./Assets/Images/Livraria_Nimbus_atualizada-removebg-preview.png" type="image/x-icon">
+        <title>Carrinho</title>
+    </head>
+    <body>
+        <header>
+            <nav class="top">
+                <a href="index.html"><img src="Assets/Images/logo.png" class="logo" alt="Logo da empresa"></a>
+                <div class="menu">
+                    <svg width="46" height="40" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 12h18"></path>
+                        <path d="M3 6h18"></path>
+                        <path d="M3 18h18"></path>
+                    </svg>
                 </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="text" name="email" id="email" class="inputUser" required>
-                    <label for="email" class="labelInput">Email</label>
+                <ul class="links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="carrinho.html">Loja</a></li>
+                    <button><a href="login.html">Login</a></button>
+                    <button><a href="cadastro.html">Cadastre-se</a></button>
+                </ul>
+            </nav>
+        </header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+            <div class="navbar-header">
+                <a id="navTitle" class="navbar-brand" href="index.html"></a>
+            </div>
+            </div>
+        </nav>
+    
+        <div class="container-fluid">
+            <div class="form-inline">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="desc" placeholder="Description">
                 </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
-                    <label for="telefone" class="labelInput">Telefone</label>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="amount" placeholder="Amount">
                 </div>
-                <p>Sexo:</p>
-                <input type="radio" id="feminino" name="genero" value="feminino" required>
-                <label for="feminino">Feminino</label>
-                <br>
-                <input type="radio" id="masculino" name="genero" value="masculino" required>
-                <label for="masculino">Masculino</label>
-                <br>
-                <input type="radio" id="outro" name="genero" value="outro" required>
-                <label for="outro">Outro</label>
-                <br><br>
-                <label for="data_nascimento"><b>Data de Nascimento:</b></label>
-                <input type="date" name="data_nascimento" id="data_nascimento" required>
-                <br><br><br>
-                <div class="inputBox">
-                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
-                    <label for="cidade" class="labelInput">Cidade</label>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="value" placeholder="Value">
                 </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="text" name="estado" id="estado" class="inputUser" required>
-                    <label for="estado" class="labelInput">Estado</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
-                    <label for="endereco" class="labelInput">Endereço</label>
-                </div>
-                <br><br>
-                <input type="submit" name="submit" id="submit">
-            </fieldset>
-        </form>
-    </div>
-</body>
+                <span id="btnUpdate" style="display: none;">
+                    <span id="inputIDUpdate"></span>
+                    <button onclick="updateData();" class="btn btn-default">Save</button>
+                    <button onclick="resetForm();" class="btn btn-default">Cancel</button>
+                </span>
+                <span id="btnAdd">
+                    <button onclick="addData();" class="btn btn-default">Add</button>
+                    <button onclick="resetForm();" class="btn btn-default">Reset</button>
+                    <button onclick="deleteList();" class="btn btn-default">Delete list</button>
+                </span>
+            </div>
+    
+            <div id="errors" style="display: none;"></div>
+    
+            <table id="listTable" class="table">
+            
+            </table>
+        </div>
+    
+        <nav class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container">
+                <h4 class="text-center text-success">Total: <span id="totalValue">$ 0,00</span></h4>
+            </div>
+        </nav>
+    
+        <script type="text/javascript" src="./Assets/js/config.js"></script>
+        <script type="text/javascript" src="./Assets/js/main.js"></script>
+    </body>
 </html>

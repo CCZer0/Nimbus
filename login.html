@@ -44,6 +44,24 @@
         <br><br>
         <button>Enviar</button>
     </div>
+    <script src="Assets/js/menu.js"></script>
+    <script>
+        const cartItems = [];
     
+        function addToCart(item) {
+            cartItems.push(item);
+            updateCart();
+        }
+    
+        function updateCart() {
+            const cartList = document.getElementById("cart-items");
+            cartList.innerHTML = "";
+            cartItems.forEach(item => {
+                const li = document.createElement("li");
+                li.textContent = item;
+                cartList.appendChild(li);
+            });
+        }
+    </script>
 </body>
 </html>

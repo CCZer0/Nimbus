@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="./Assets/Estilos/style.css">
     <link rel="shortcut icon" href="./Assets/Images/Livraria_Nimbus_atualizada-removebg-preview.png" type="image/x-icon">
     <title>Nimbus</title>
+    <style>
+        img logo-nimbus{
+            width: 20px;
+            height: 20;
+        }
+    </style>
 </head>
 
 <body>
@@ -39,21 +45,24 @@
         </nav>
     </header>
     <main>
-        <section class="inicio">
-            <article class="infos">
-                <h1 class="titulo">Dale aqui é a Nimbus !</h1>
-                <p class="texto">A Nimbus é uma editora/livraria que tem como principal objetivo fomentar todo o processo de produção, desenvolvimento, e venda de HQs e livros de autores brasileiros.</p>
-                <a href="#" class="buttonP">
-                    <span>Venha conhecer nossos exemplares</span>
-                    <svg width="30" height="30" fill="none" stroke="white" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 12h14"></path>
-                        <path d="m12 5 7 7-7 7"></path>
-                    </svg>
-                </a>
-            </article>
-        </section>
-        
+        <div id="topo">
+            <section class="inicio">
+                <article class="infos">
+                    <h1 class="titulo">Dale aqui é a Nimbus !</h1>
+                    <p class="texto">A Nimbus é uma editora/livraria que tem como principal objetivo fomentar todo o processo de produção, desenvolvimento, e venda de livros e HQs.</p>
+                    <a href="#" class="buttonP">
+                        <span>Venha conhecer nossos exemplares</span>
+                        <svg width="30" height="30" fill="none" stroke="white" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </article>
+            </section>
+            <img src="./Assets/Images/logo.png" alt="logo-numbus" class="logo-numbus">
+
+        </div>
 
         <!--Banner-->
         <section class="banner">
@@ -209,8 +218,7 @@
         </div>
         <div class="inferior">
             <div class="aviso">
-                <p>Preços e condições podem sofrer alterações sem prévia notificação. Em caso de preços divergentes,
-                    considerar válido o preço do carrinho de compras.</p>
+                <p>Preços e condições podem sofrer alterações sem prévia notificação. Em caso de preços divergentes, considerar válido o preço do carrinho de compras.</p>
             </div>
             <div class="direitos">
                 <p>Todos os direitos reservados a NIMBUS Inc.</p>
@@ -237,5 +245,4 @@
         }
     </script>
 </body>
-
 </html>

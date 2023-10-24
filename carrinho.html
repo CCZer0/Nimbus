@@ -36,7 +36,7 @@
                     <button><a href="cadastro.html">Cadastre-se</a></button>
                 </ul>
             </nav>
-        </header>
+        </header>   
         <nav class="navbar navbar-default">
             <div class="container-fluid">
             <div class="navbar-header">
@@ -83,5 +83,23 @@
     
         <script type="text/javascript" src="./Assets/js/config.js"></script>
         <script type="text/javascript" src="./Assets/js/main.js"></script>
+        <script>
+            const cartItems = [];
+        
+            function addToCart(item) {
+                cartItems.push(item);
+                updateCart();
+            }
+        
+            function updateCart() {
+                const cartList = document.getElementById("cart-items");
+                cartList.innerHTML = "";
+                cartItems.forEach(item => {
+                    const li = document.createElement("li");
+                    li.textContent = item;
+                    cartList.appendChild(li);
+                });
+            }
+        </script>
     </body>
 </html>
